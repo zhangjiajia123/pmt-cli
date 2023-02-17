@@ -1,6 +1,6 @@
 {
   "name": "pmt-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
   "type": "module",
