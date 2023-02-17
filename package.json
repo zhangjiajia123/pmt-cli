@@ -1,11 +1,11 @@
 {
-  "name": "psr-cli",
-  "version": "1.0.3",
+  "name": "rs-cli",
+  "version": "1.0.2",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
   "type": "module",
   "bin": {
-    "psr": "./bin/index.js"
+    "rs": "./bin/index.js"
   },
   "keywords": [
     "registry",
