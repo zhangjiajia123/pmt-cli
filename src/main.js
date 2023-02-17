@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import { readFile, getCurrentRegistry, isFindRegistry, writeFile, registryTests } from './untils.js';
-import { NPMRC, REGISTRIES, REPOSITORY, REGISTRY, HOME } from './constants.js';
+import { NPMRC, REGISTRIES } from './constants.js';
 // 获取列表
 const onList = async () => {
   // 获取当前源
