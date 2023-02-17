@@ -1,11 +1,11 @@
 {
-  "name": "znpms",
+  "name": "psr-cli",
   "version": "1.0.2",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
   "type": "module",
   "bin": {
-    "nrm-s": "./bin/index.js"
+    "psr": "./bin/index.js"
   },
   "keywords": [
     "registry",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "ini": "^3.0.1",
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "znpms": "^1.0.2"
   }
 }
