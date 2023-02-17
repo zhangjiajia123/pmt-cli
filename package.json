@@ -1,11 +1,11 @@
 {
-  "name": "rsm-cli",
+  "name": "pmt-cli",
   "version": "1.0.4",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
   "type": "module",
   "bin": {
-    "rs": "./bin/index.js"
+    "pmt": "./bin/index.js"
   },
   "keywords": [
     "registry",
