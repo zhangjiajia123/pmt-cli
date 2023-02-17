@@ -1,6 +1,6 @@
 {
   "name": "znpms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
   "type": "module",
