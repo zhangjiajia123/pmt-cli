@@ -4,7 +4,7 @@ import version from "../package.json" assert { type: "json" };
 import { onList, onCurrent, onUse, onTest } from "./main.js";
 export function init() {
   program
-  .version(version);
+    .version(version, "-v, --version, -V");
   program
     .command("list")
     .alias("ls")
