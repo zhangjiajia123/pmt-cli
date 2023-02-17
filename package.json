@@ -17,10 +17,10 @@
   },
   "author": "张佳佳",
   "license": "ISC",
-  "homepage": "https://github.com/zhangjiajia123/nrm-s",
+  "homepage": "https://github.com/zhangjiajia123/pmt-cli",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangjiajia123/nrm-s"
+    "url": "https://github.com/zhangjiajia123/pmt-cli"
   },
   "dependencies": {
     "chalk": "^5.2.0",
