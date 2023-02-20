@@ -3,7 +3,6 @@
   "version": "1.0.8",
   "description": "NPM registry manager for quick and easy switching of mirror sources between different npm registries",
   "main": "./src/index.js",
-  "type": "module",
   "bin": {
     "pmt": "./bin/index.js"
   },
@@ -23,11 +22,10 @@
     "url": "https://github.com/zhangjiajia123/pmt-cli"
   },
   "dependencies": {
-    "chalk": "^5.2.0",
-    "commander": "^10.0.0",
-    "ini": "^3.0.1",
-    "node-fetch": "^3.3.0",
-    "pmt-cli": "^1.0.5"
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "ini": "^2.0.0",
+    "node-fetch": "2.6.6"
   },
   "devDependencies": {}
 }

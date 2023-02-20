@@ -1,7 +1,7 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs'
-import { parse, stringify } from 'ini'
-import { NPMRC, REGISTRY, REGISTRIES } from './constants.js'
-import fetch from 'node-fetch'
+const fs = require('fs');
+const ini = require('ini');
+const { NPMRC, REGISTRY, REGISTRIES } = require('./constants')
+const fetch = require('node-fetch')
 
 function exit(err) {
   console.error("error: " + err);
@@ -11,11 +11,11 @@ function exit(err) {
 async function readFile(file) {
   return new Promise((resolve) => {
     // 判断路径是否有效
-    if (!existsSync(file)) {
+    if (!fs.existsSync(file)) {
       resolve({});
     } else {
       try {
-        const content = parse(readFileSync(file, 'utf-8'));
+        const content = ini.parse(fs.readFileSync(file, 'utf-8'));
         resolve(content);
       } catch (error) {
         exit(error);
@@ -46,7 +46,7 @@ async function isFindRegistry(name) {
 async function writeFile(path, content) {
   return new Promise(resolve => {
     try {
-      writeFileSync(path, stringify(content));
+      fs.writeFileSync(path, ini.stringify(content));
       resolve();
     } catch (error) {
       exit(error);
@@ -80,7 +80,7 @@ async function registryTests(sources) {
   })
 }
 
-export {
+exports.default = {
   readFile,
   getCurrentRegistry,
   isFindRegistry,

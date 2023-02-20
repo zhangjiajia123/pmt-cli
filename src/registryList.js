@@ -1,4 +1,4 @@
-const registryList = [
+exports.default = [
   {
     name: "npm",
     home: "https://www.npmjs.org",
@@ -30,4 +30,3 @@ const registryList = [
     registry: "https://skimdb.npmjs.com/registry/",
   }
 ]
-export default registryList

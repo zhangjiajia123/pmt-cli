@@ -1,13 +1,13 @@
-import { join } from 'path';
-import REGISTRIES from './registryList.js';
+const path = require('path')
+const REGISTRIES = require("./registryList").default;
 
 const HOME = 'home';
 const REGISTRY = 'registry';
-const NPMRC = join(process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'], '.npmrc');
+const NPMRC = path.join(process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME'], '.npmrc');
 
-export {
+module.exports =  {
   NPMRC,
   REGISTRIES,
   REGISTRY,
   HOME,
-};
+}
