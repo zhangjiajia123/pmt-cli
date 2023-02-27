@@ -11,7 +11,7 @@ const onList = async () => {
       " "
     )} ${item.registry}`;
     console.log(
-      item.registry === current ? chalk.green(`🚀 ${str}`) : `   ${str}`
+      item.registry === current ? chalk.green(`${str}`) : `   ${str}`
     );
   });
 }
@@ -22,7 +22,7 @@ const onCurrent = async () => {
   const item =  REGISTRIES.filter(list => list.registry === current)[0]
   const str = `${(item.name + " ").padEnd(14, " ")} ${item.home.padEnd(35, " ")} ${item.registry}`;
   console.log(
-    chalk.green(`🚀 ${str}`)
+    chalk.green(`${str}`)
   )
 }
 
