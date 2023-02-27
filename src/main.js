@@ -11,7 +11,7 @@ const onList = async () => {
       " "
     )} ${item.registry}`;
     console.log(
-      item.registry === current ? chalk.green(` ${str}`) : `   ${str}`
+      item.registry === current ? chalk.green(` ${str}`) : ` ${str}`
     );
   });
 }
@@ -54,7 +54,7 @@ const onTest = async (name) => {
   results.forEach((item) => {
     const str = `${(item.name + " ").padEnd(10, " ")} ${item.registry.padEnd(35, " ")} ${item.time}ms`;
     console.log(
-      item.registry === current ? chalk.green(` ${str}`) : `   ${str}`
+      item.registry === current ? chalk.green(` ${str}`) : ` ${str}`
     );
   });
   
