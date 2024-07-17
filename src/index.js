@@ -2,7 +2,7 @@ const { Command } = require("commander");
 const program = new Command();
 // import version from "../package.json" assert { type: "json" };
 const { version } = require("../package.json");
-import { onList, onCurrent, onUse, onTest } from "./main.js";
+const { onList, onCurrent, onUse, onTest } = require("./main.js");
 export function init() {
   program.version(version.version, "-v, --version, -V");
   program
